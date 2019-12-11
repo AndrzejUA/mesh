@@ -60,10 +60,10 @@ body {
     position: relative;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-areas: 
+    grid-template-columns: 1fr 1fr 3fr 1fr;
+    /*grid-template-areas: 
     "header-logo header-nav header-contacts"
-    "header-text header-buttons .";
+    "header-text header-buttons ."; */
     grid-template-rows: 1fr 2fr 1fr;
     grid-column-gap: 20px;
     min-height: 696px;
@@ -82,6 +82,8 @@ body {
     font-size: 35px;
     font-family: 'Lobster', cursive;
     color: black;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 .header-nav {
@@ -89,6 +91,9 @@ body {
     grid-area: header-nav;
     min-width: auto;
     font-size: 14px;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    text-align: center;
 }
 
 .header-contacts {
@@ -98,6 +103,8 @@ body {
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    grid-column: 4/5;
+    grid-row: 1/2;
 }
 
 .header-contacts__phone {
@@ -133,6 +140,8 @@ body {
     grid-area: header-text;
     align-self: center;
     align-content: flex-start;
+    grid-column: 1/3;
+    grid-row: 2/3;
 }
 
 .header-title {
@@ -164,7 +173,10 @@ body {
 }
 
 .header-buttons {
+    position: relative;
     grid-area: header-buttons;
+    grid-column: 3/5;
+    grid-row: 2/3;
 }
 
 .header-button__link {
@@ -183,23 +195,50 @@ body {
     position: absolute;
     top: 20%;
     right: 0px;
-    height: 75%;
+    height: 540px;
 }
 
 @media (max-width:1720px) {
-    .header {
+    /*.header {
         grid-template-areas: 
         "header-logo header-nav header-contacts"
         "header-text header-text ."
         "header-buttons header-buttons .";
         padding: 0 0 35px 40px;
+    }*/
+    .header {
+        grid-template-rows: 1fr 1fr 2fr 1fr;
     }
-
     .header-text {
         padding-left: 35px;
+        grid-column: 1/5;
     }
 
     .header-buttons {
         margin-left: 35px;
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+}
+
+@media (max-width:1360px) {
+    .header {
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 5fr 2fr;
+    }
+    .header-logo {
+        margin-top: 20px;
+    }
+    .header-nav {
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .header-text {
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .header-buttons {
+        grid-column: 1/5;
+        grid-row: 4/5;
     }
 }
