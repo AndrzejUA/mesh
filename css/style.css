@@ -221,7 +221,7 @@ body {
 }
 
 .meshes__img {
-    height: 550px;
+    height: 410px;
 }
 
 .meshes__img img{
@@ -247,6 +247,61 @@ body {
     padding: 4px 0;
     margin: 0 auto;
 }
+
+/*Section feedback*/
+#feedback {
+    background-color: #fff9e6;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/7;
+    grid-gap: 25px;
+    align-items: center;
+    margin: 0 25px;
+}
+.row {
+    position: relative;
+}
+label {
+    position: absolute;
+    top: -10px;
+    margin-left: 15px;
+    padding: 3px;
+    background-color: #fff9e6;
+    color: #9b9b9b;
+}
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.feedback {
+    
+}
+.fedback__title {
+   
+}
+.feedback__discription {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #9b7a7a;
+}
+.feedback__name {
+    border: 2px solid #ff591f;
+    border-radius: 20px;
+    padding: 25px;
+}
+.feedback__phone {
+    border: 2px solid #ff591f;
+    border-radius: 20px;
+    padding: 25px;
+}
+.feedback__button {
+    
+}
+
+
 
 @media (max-width:1720px) {
     .header {
@@ -333,6 +388,18 @@ body {
     }
     .meshes {
         grid-template-columns: 1fr;
+    }
+    .feedback-row {
+
+    }
+    form {
+        display: block;
+    }
+    label {
+        top: 4px;
+    }
+    input {
+        margin: 15px 0;
     }
 }
 
