@@ -15,13 +15,13 @@ body {
     text-decoration: none;
     font-size: 16px;
     color: #fff;
-    background-color: #ff591f;
-    border: 3px solid #ff591f;
+    background-color: #15AABF;
+    border: 3px solid #15AABF;
     padding: 25px 55px;
     border-radius: 100px;
     text-transform: uppercase;
     font-weight: 600;
-    box-shadow: 0 10px 40px rgba(255, 79, 35, 0.5), 0 9px 46px rgba(255, 79, 35, 0.5);
+    box-shadow: 0 10px 40px rgba(21, 170, 191, 0.5), 0 9px 46px rgba(21, 170, 191, 0.5);
     transition: 0.3s;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 .link {
-    color: #ff591f;
+    color: #15AABF;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
@@ -40,7 +40,7 @@ body {
 
 .circle {
     border-radius: 50%;
-    background-color: #ffcd33;
+    background-color: #15AABF;
     position: absolute;
 }
 
@@ -164,10 +164,10 @@ body {
 }
 
 .header-nav__link:hover {
-    border-top: 1px solid #ff591f;
-    border-bottom: 1px solid #ff591f;
+    border-top: 1px solid #15AABF;
+    border-bottom: 1px solid #15AABF;
     padding: 7px 0 7px 0;
-    color: #ff591f;
+    color: #15AABF;
 }
 
 .header-subtitle {
@@ -190,7 +190,7 @@ body {
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #ff591f;
+    background-color: #15AABF;
 }
 
 .header-img {
@@ -241,7 +241,7 @@ body {
 }
 
 .meshes__price {
-    border: 2px solid #ff591f;
+    border: 2px solid #15AABF;
     border-radius: 15px;
     width: 120px;
     padding: 4px 0;
@@ -290,12 +290,12 @@ input {
     color: #9b7a7a;
 }
 .feedback__name {
-    border: 2px solid #ff591f;
+    border: 2px solid #15AABF;
     border-radius: 20px;
     padding: 25px;
 }
 .feedback__phone {
-    border: 2px solid #ff591f;
+    border: 2px solid #15AABF;
     border-radius: 20px;
     padding: 25px;
 }
@@ -336,8 +336,8 @@ input {
     transition: .2s;
 }
 .footer-social i:hover {
-    color: #ff591f;
-    text-shadow: 0 0 15px #ff591f;
+    color: #15AABF;
+    text-shadow: 0 0 15px #15AABF;
 }
 
 @media (max-width:1720px) {
