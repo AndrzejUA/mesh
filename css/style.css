@@ -251,8 +251,9 @@ body {
 /*Section feedback*/
 #feedback {
     background-color: #fff9e6;
+    padding-bottom: 25px;
 }
-form {
+.feedback__form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1/7;
@@ -275,6 +276,7 @@ input {
     border: none;
     outline: none;
     width: 100%;
+    font-size: 20px;
 }
 .feedback {
     
@@ -300,8 +302,43 @@ input {
 .feedback__button {
     
 }
-
-
+/*CONTACTS*/
+.contacts-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.contacts__adress {
+    display: grid;
+    align-content: center;
+    grid-column: 1/2;
+    grid-gap: 25px;
+    margin-left: 25px;
+}
+.contacts__adress a {
+    text-decoration: none;
+    color: #000000;
+}
+.contacts__map {
+    min-height: 400px;
+    grid-column: 2/5;
+}
+/*FOOTER*/
+.footer-wrapper{
+    background-color: #252525;
+    text-align: center;
+}
+.footer-social {
+    padding: 25px;
+}
+.footer-social i {
+    color: #ffffff;
+    padding: 5px;
+    transition: .2s;
+}
+.footer-social i:hover {
+    color: #ff591f;
+    text-shadow: 0 0 15px #ff591f;
+}
 
 @media (max-width:1720px) {
     .header {
@@ -392,7 +429,7 @@ input {
     .feedback-row {
 
     }
-    form {
+    .feedback__form {
         display: block;
     }
     label {
